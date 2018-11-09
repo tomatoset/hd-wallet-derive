@@ -1,0 +1,711 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "c777d2f12161dd72863c7ebd259235d8",
+    "content-hash": "93cf49c9c2502857075b8217513bc2be",
+    "packages": [
+        {
+            "name": "bitwasp/bech32",
+            "version": "v0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Bit-Wasp/bech32.git",
+                "reference": "e1ea58c848a4ec59d81b697b3dfe9cc99968d0e7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Bit-Wasp/bech32/zipball/e1ea58c848a4ec59d81b697b3dfe9cc99968d0e7",
+                "reference": "e1ea58c848a4ec59d81b697b3dfe9cc99968d0e7",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.4.0",
+                "squizlabs/php_codesniffer": "^2.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BitWasp\\Bech32\\": "src/"
+                },
+                "files": [
+                    "src/bech32.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Kerin",
+                    "homepage": "https://thomaskerin.io",
+                    "role": "Author"
+                }
+            ],
+            "description": "Pure (no dependencies) implementation of bech32",
+            "homepage": "https://github.com/bit-wasp/bech32",
+            "time": "2018-02-05 22:23:47"
+        },
+        {
+            "name": "bitwasp/bitcoin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Bit-Wasp/bitcoin-php.git",
+                "reference": "8782bc6c470e342d4e0cb67eb036974f133b950b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Bit-Wasp/bitcoin-php/zipball/1cb0d047cf7c3675577f798d2ca6d0355adf7a17",
+                "reference": "8782bc6c470e342d4e0cb67eb036974f133b950b",
+                "shasum": ""
+            },
+            "require": {
+                "bitwasp/bech32": "^0.0.1",
+                "bitwasp/buffertools": "^0.5.0",
+                "bitwasp/secp256k1-php": "^0.2.0",
+                "composer/semver": "^1.4.0",
+                "lastguest/murmurhash": "v2.0.0",
+                "mdanter/ecc": "^0.5.0",
+                "paragonie/random_compat": "^1.4.0|^2.0.0",
+                "php-64bit": ">=7.0",
+                "pleonasm/merkle-tree": "1.0.0"
+            },
+            "require-dev": {
+                "bitwasp/bitcoinconsensus": "v3.0.0",
+                "ext-json": "*",
+                "nbobtc/bitcoind-php": "v2.0.2",
+                "phpunit/phpunit": "^5.4.0",
+                "squizlabs/php_codesniffer": "^2.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BitWasp\\Bitcoin\\": "src/"
+                },
+                "files": [
+                    "src/Script/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Kerin",
+                    "homepage": "https://thomaskerin.io",
+                    "role": "Author"
+                }
+            ],
+            "description": "PHP Bitcoin library with functions for transactions, signatures, serialization, Random/Deterministic ECDSA keys, blocks, RPC bindings",
+            "homepage": "https://github.com/bit-wasp/bitcoin-php",
+            "time": "2018-07-10 20:07:43"
+        },
+        {
+            "name": "bitwasp/buffertools",
+            "version": "v0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Bit-Wasp/buffertools-php.git",
+                "reference": "5c2c8c0f5735c1d5475d2e91c0b967dd38417f10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Bit-Wasp/buffertools-php/zipball/5c2c8c0f5735c1d5475d2e91c0b967dd38417f10",
+                "reference": "5c2c8c0f5735c1d5475d2e91c0b967dd38417f10",
+                "shasum": ""
+            },
+            "require": {
+                "php-64bit": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "v0.9.x",
+                "phpunit/phpunit": "^6.0",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BitWasp\\Buffertools\\": "src/Buffertools/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Kerin",
+                    "homepage": "https://thomaskerin.io"
+                },
+                {
+                    "name": "Ruben de Vries",
+                    "email": "ruben@rubensayshi.com"
+                }
+            ],
+            "description": "Toolbox for working with binary and hex data. Similar to NodeJS Buffer.",
+            "time": "2017-12-27 19:23:12"
+        },
+        {
+            "name": "bitwasp/secp256k1-php",
+            "version": "v0.2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Bit-Wasp/secp256k1-php.git",
+                "reference": "884f9b4445056765947ee48dbd4d70f4fc81f0e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Bit-Wasp/secp256k1-php/zipball/884f9b4445056765947ee48dbd4d70f4fc81f0e2",
+                "reference": "884f9b4445056765947ee48dbd4d70f4fc81f0e2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "Ruben de Vries",
+                    "email": "ruben@rubensayshi.com"
+                },
+                {
+                    "name": "Thomas Kerin",
+                    "email": "afk11@users.noreply.github.com"
+                }
+            ],
+            "description": "PHP Extension with bindings for bitcoin/secp256k1.",
+            "keywords": [
+                "ECDSA",
+                "bitcoin",
+                "bitwasp",
+                "cryptocurrency",
+                "ecc",
+                "extension",
+                "php",
+                "secp256k1"
+            ],
+            "time": "2018-07-14 15:51:35"
+        },
+        {
+            "name": "composer/semver",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/semver.git",
+                "reference": "2b303e43d14d15cc90c8e8db4a1cdb6259f1a5c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/semver/zipball/2b303e43d14d15cc90c8e8db4a1cdb6259f1a5c5",
+                "reference": "2b303e43d14d15cc90c8e8db4a1cdb6259f1a5c5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.2 || ^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.5 || ^5.0.5",
+                "phpunit/phpunit-mock-objects": "2.3.0 || ^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Semver\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nils Adermann",
+                    "email": "naderman@naderman.de",
+                    "homepage": "http://www.naderman.de"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                },
+                {
+                    "name": "Rob Bast",
+                    "email": "rob.bast@gmail.com",
+                    "homepage": "http://robbast.nl"
+                }
+            ],
+            "description": "Semver library that offers utilities, version constraint parsing and validation.",
+            "keywords": [
+                "semantic",
+                "semver",
+                "validation",
+                "versioning"
+            ],
+            "time": "2017-11-06 09:05:54"
+        },
+        {
+            "name": "dan-da/coinparams",
+            "version": "v0.2.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dan-da/coinparams.git",
+                "reference": "35e0eb64f0e74f1013833ada1ad55946efb072ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dan-da/coinparams/zipball/35e0eb64f0e74f1013833ada1ad55946efb072ed",
+                "reference": "35e0eb64f0e74f1013833ada1ad55946efb072ed",
+                "shasum": ""
+            },
+            "require-dev": {
+                "dan-da/texttable-php": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "bindings/php/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "provides crypto currency specific information such as version numbers, DNS seeds, etc, available in JSON format",
+            "time": "2018-10-18 16:13:16"
+        },
+        {
+            "name": "dan-da/strictmode-php",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dan-da/strictmode-php.git",
+                "reference": "c58bcf128d658ecbaa48a619f00e3082279a032d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dan-da/strictmode-php/zipball/c58bcf128d658ecbaa48a619f00e3082279a032d",
+                "reference": "c58bcf128d658ecbaa48a619f00e3082279a032d",
+                "shasum": ""
+            },
+            "suggest": {
+                "dan-da/tester-php": "For running the test cases"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "strictmode.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2018-07-18 08:39:26"
+        },
+        {
+            "name": "dan-da/texttable-php",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dan-da/texttable-php.git",
+                "reference": "c7907393f3442049d0ad8ee1167e171591cf84aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dan-da/texttable-php/zipball/c7907393f3442049d0ad8ee1167e171591cf84aa",
+                "reference": "c7907393f3442049d0ad8ee1167e171591cf84aa",
+                "shasum": ""
+            },
+            "require": {
+                "dan-da/strictmode-php": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "texttable.class.php",
+                    "texttable_markdown.class.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2018-07-11 18:30:12"
+        },
+        {
+            "name": "fgrosse/phpasn1",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fgrosse/PHPASN1.git",
+                "reference": "734e1a94dfb292199f4f285be99a5645ea66fb58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fgrosse/PHPASN1/zipball/734e1a94dfb292199f4f285be99a5645ea66fb58",
+                "reference": "734e1a94dfb292199f4f285be99a5645ea66fb58",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.3",
+                "satooshi/php-coveralls": "~2.0"
+            },
+            "suggest": {
+                "ext-gmp": "GMP is the preferred extension for big integer calculations",
+                "php-curl": "For loading OID information from the web if they have not bee defined statically"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FG\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Friedrich Große",
+                    "email": "friedrich.grosse@gmail.com",
+                    "homepage": "https://github.com/FGrosse",
+                    "role": "Author"
+                },
+                {
+                    "name": "All contributors",
+                    "homepage": "https://github.com/FGrosse/PHPASN1/contributors"
+                }
+            ],
+            "description": "A PHP Framework that allows you to encode and decode arbitrary ASN.1 structures using the ITU-T X.690 Encoding Rules.",
+            "homepage": "https://github.com/FGrosse/PHPASN1",
+            "keywords": [
+                "DER",
+                "asn.1",
+                "asn1",
+                "ber",
+                "binary",
+                "decoding",
+                "encoding",
+                "x.509",
+                "x.690",
+                "x509",
+                "x690"
+            ],
+            "time": "2018-03-31 08:32:19"
+        },
+        {
+            "name": "lastguest/murmurhash",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lastguest/murmurhash-php.git",
+                "reference": "4fb7516f67e695e5d7fa129d1bbb925ec0ebe408"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lastguest/murmurhash-php/zipball/4fb7516f67e695e5d7fa129d1bbb925ec0ebe408",
+                "reference": "4fb7516f67e695e5d7fa129d1bbb925ec0ebe408",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.6.3",
+                "phpunit/phpunit": "^5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "lastguest\\": "src/lastguest/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stefano Azzolini",
+                    "email": "lastguest@gmail.com",
+                    "homepage": "https://github.com/lastguest/murmurhash-php"
+                }
+            ],
+            "description": "MurmurHash3 Hash",
+            "homepage": "https://github.com/lastguest/murmurhash-php",
+            "keywords": [
+                "hash",
+                "hashing",
+                "murmur"
+            ],
+            "time": "2017-10-10 15:16:12"
+        },
+        {
+            "name": "mdanter/ecc",
+            "version": "v0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpecc/phpecc.git",
+                "reference": "ed5c6d496f5310de1b7071b8375fafa3559a1344"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpecc/phpecc/zipball/ed5c6d496f5310de1b7071b8375fafa3559a1344",
+                "reference": "ed5c6d496f5310de1b7071b8375fafa3559a1344",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gmp": "*",
+                "fgrosse/phpasn1": "v2.0.x",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0",
+                "squizlabs/php_codesniffer": "~2",
+                "symfony/yaml": "~2.6|~3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mdanter\\Ecc\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matyas Danter",
+                    "homepage": "http://matejdanter.com/",
+                    "role": "Author"
+                },
+                {
+                    "name": "Thibaud Fabre",
+                    "email": "thibaud@aztech.io",
+                    "homepage": "http://aztech.io",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Thomas Kerin",
+                    "email": "afk11@users.noreply.github.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "PHP Elliptic Curve Cryptography library",
+            "homepage": "https://github.com/phpecc/phpecc",
+            "keywords": [
+                "Diffie",
+                "ECDSA",
+                "Hellman",
+                "curve",
+                "ecdh",
+                "elliptic",
+                "nistp192",
+                "nistp224",
+                "nistp256",
+                "nistp384",
+                "nistp521",
+                "phpecc",
+                "secp256k1",
+                "secp256r1"
+            ],
+            "time": "2017-10-09 16:05:37"
+        },
+        {
+            "name": "olegabr/keccak",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/olegabr/php-keccak.git",
+                "reference": "280978604726639f933326f3be6aaa2eb491398f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/olegabr/php-keccak/zipball/280978604726639f933326f3be6aaa2eb491398f",
+                "reference": "280978604726639f933326f3be6aaa2eb491398f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "php": ">=5.6",
+                "phpunit/phpunit": "5.7.27|6.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "kornrunner\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Boris Momcilovic",
+                    "homepage": "https://github.com/kornrunner/php-keccak"
+                },
+                {
+                    "name": "Oleg Abrosimov",
+                    "homepage": "https://github.com/olegabr/php-keccak"
+                }
+            ],
+            "description": "Pure PHP implementation of Keccak with PHP 5.6+ support",
+            "keywords": [
+                "keccak",
+                "sha-3"
+            ],
+            "time": "2018-06-14 11:57:17"
+        },
+        {
+            "name": "paragonie/random_compat",
+            "version": "v2.0.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/random_compat.git",
+                "reference": "29af24f25bab834fcbb38ad2a69fa93b867e070d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/29af24f25bab834fcbb38ad2a69fa93b867e070d",
+                "reference": "29af24f25bab834fcbb38ad2a69fa93b867e070d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*|5.*"
+            },
+            "suggest": {
+                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/random.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com"
+                }
+            ],
+            "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+            "keywords": [
+                "csprng",
+                "polyfill",
+                "pseudorandom",
+                "random"
+            ],
+            "time": "2018-07-04 16:31:37"
+        },
+        {
+            "name": "pleonasm/merkle-tree",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pleonasm/merkle-tree.git",
+                "reference": "9ddc9d0a0e396750fada378f3aa90f6c02dd56a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pleonasm/merkle-tree/zipball/9ddc9d0a0e396750fada378f3aa90f6c02dd56a1",
+                "reference": "9ddc9d0a0e396750fada378f3aa90f6c02dd56a1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "ext-xdebug": ">=2.2.0",
+                "phpunit/php-invoker": ">=1.0.0,<1.2.0",
+                "phpunit/phpunit": "3.7.19",
+                "satooshi/php-coveralls": "*@dev",
+                "squizlabs/php_codesniffer": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Pleo": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Nagi",
+                    "email": "matthew.nagi@base-2.net"
+                }
+            ],
+            "description": "An implementation of a Merkle Tree in PHP",
+            "time": "2013-05-22 20:46:20"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "dan-da/tester-php",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dan-da/tester-php.git",
+                "reference": "46ab3b581e4370b19999f96f6a3b691c7a4d850f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dan-da/tester-php/zipball/46ab3b581e4370b19999f96f6a3b691c7a4d850f",
+                "reference": "46ab3b581e4370b19999f96f6a3b691c7a4d850f",
+                "shasum": ""
+            },
+            "require": {
+                "dan-da/strictmode-php": "^1.0"
+            },
+            "bin": [
+                "tester.php"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2018-07-19 05:45:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "bitwasp/bitcoin": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "ext-json": "*",
+        "php": ">=5.5"
+    },
+    "platform-dev": []
+}

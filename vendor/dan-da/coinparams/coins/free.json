@@ -1,0 +1,56 @@
+{
+    "meta": {
+        "symbol": "FREE",
+        "name": "Freecoin",
+        "supply": {
+            "max": "42000000"
+        },
+        "web": {
+            "websites": [
+                "http:\/\/crown.tech\/"
+            ],
+            "announcement": "https:\/\/bitcointalk.org\/index.php?topic=815487",
+            "source_code": "https:\/\/github.com\/Crowndev\/crowncoin",
+            "explorers": [
+                "https:\/\/chainz.cryptoid.info\/crw\/",
+                "http:\/\/crw.blockpioneers.info\/index.php"
+            ],
+            "coinmarketcap": "https:\/\/coinmarketcap.com\/currencies\/crown\/",
+            "message_board": [],
+            "chat": [
+                "https:\/\/t.me\/crownplatform",
+                "https:\/\/mm.crownlab.eu\/login"
+            ]
+        },
+        "original_codebase": "bitcoin"
+    },
+    "main": {
+        "symbol": "FREE",
+        "name": "Freecoin - Mainnet",
+        "testnet": false,
+        "port": 25880,
+        "port_rpc": 21880,
+        "protocol": {
+            "magic": "0xb8ebb3df"
+        },
+        "seeds_dns": [
+            "35.229.254.219"
+        ],
+        "prefixes": {
+            "private": 128,
+            "public": 25,
+            "scripthash": 57,
+            "bech32": null,
+            "bip44": 252,
+            "extended": {
+                "xpub": {
+                    "public": "0x0488b21e",
+                    "private": "0x0488ade4"
+                }
+            }
+        },
+        "hash_genesis_block": "9ba33b76a1c80661bcc3a3ed1571d4fe54e448b42af5f2aa60c9db6b61c6e377",
+        "message_magic": "\u0016Freecoin Signed Message:\n",
+        "decimals": 8
+    }
+}
